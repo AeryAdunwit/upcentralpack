@@ -216,3 +216,9 @@ a.ssolink {
   font-weight: 600;
   margin: 0 10px;
 }
+.field-checkbox input[type="radio"] {
+  width: 16px;   /* Set width of the radio button */
+  height: 16px;  /* Set height of the radio button */
+  transform: scale(0.8);  /* Adjust the scale to make it smaller */
+  margin-right: 5px;
+}
