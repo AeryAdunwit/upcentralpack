@@ -213,8 +213,8 @@ input[type="radio"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  width: 16px; /* Adjust outer circle size */
-  height: 16px;
+  width: 10px; /* Adjust outer circle size */
+  height: 10px;
   border: 2px solid #007bff;
   border-radius: 50%;
   outline: none;
