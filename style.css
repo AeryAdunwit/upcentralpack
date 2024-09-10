@@ -213,8 +213,8 @@ input[type="radio"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  width: 13px; /* Adjust outer circle size */
-  height: 13px;
+  width: 16px; /* Adjust outer circle size */
+  height: 16px;
   border: 2px solid #007bff;
   border-radius: 50%;
   outline: none;
@@ -226,8 +226,8 @@ input[type="radio"] {
 input[type="radio"]:checked::before {
   content: '';
   display: block;
-  width: 12px; /* Larger inner dot size */
-  height: 12px;
+  width: 8px; /* Smaller inner dot size */
+  height: 8px;
   background-color: #007bff;
   border-radius: 50%;
   position: absolute;
@@ -244,5 +244,3 @@ input[type="radio"] + label {
   font-size: 16px;
   cursor: pointer; /* Makes the label clickable */
 }
-
-
