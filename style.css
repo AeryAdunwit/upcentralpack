@@ -208,9 +208,26 @@ a.ssolink {
   font-weight: 600;
   margin: 0 10px;
 }
-.field-checkbox input[type="radio"] {
-  width: 16px;   /* Set width of the radio button */
-  height: 16px;  /* Set height of the radio button */
-  transform: scale(0.8);  /* Adjust the scale to make it smaller */
-  margin-right: 5px;
+input[type="radio"] {
+  transform: scale(0.6); /* Adjust the scale to reduce the size */
+  -webkit-appearance: none; /* Remove the default styling */
+  -moz-appearance: none;
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  border: 2px solid #007bff; /* Custom border color */
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
 }
+
+input[type="radio"]:checked::before {
+  content: '';
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: #007bff; /* Checked state color */
+  border-radius: 50%;
+  margin: 2px;
+}
+
