@@ -135,6 +135,9 @@ span {
 label {
   margin-bottom: 10px;
   align-items: center;
+  display: block;
+  text-align: center;
+  font-weight: bold;
 }
 
 .reset-pass a,
