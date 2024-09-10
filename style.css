@@ -202,39 +202,21 @@ a.ssolink {
   font-weight: 600;
   margin: 0 10px;
 }
-/* Radio button styling */
-input[type="radio"] {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  width: 10px; /* Adjust outer circle size */
-  height: 10px;
-  border: 2px solid #007bff;
-  border-radius: 50%;
-  outline: none;
-  cursor: pointer;
-  position: relative;
-  vertical-align: middle; /* Ensures vertical alignment with label */
+.radio-group {
+  display: flex;
+  align-items: center; /* Center vertically */
 }
 
-input[type="radio"]:checked::before {
-  content: '';
-  display: block;
-  width: 8px; /* Smaller inner dot size */
-  height: 8px;
-  background-color: #007bff;
-  border-radius: 50%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.radio-group label {
+  display: flex;
+  align-items: center;
+  margin-right: 16px; /* Adjust spacing between radio buttons */
 }
 
-/* Label styling to center vertically */
-input[type="radio"] + label {
-  display: inline-block;
-  margin-left: 8px; /* Space between radio button and label */
-  vertical-align: middle; /* Align label with radio button */
-  font-size: 16px;
-  cursor: pointer; /* Makes the label clickable */
+.radio-group input[type="radio"] {
+  margin-right: 8px; /* Adjust space between radio button and label */
+}
+
+.radio-group input[type="radio"]:checked::before {
+  /* Customize the checked state if needed */
 }
