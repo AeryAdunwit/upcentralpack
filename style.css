@@ -208,29 +208,4 @@ a.ssolink {
   font-weight: 600;
   margin: 0 10px;
 }
-input[type="radio"] {
-  transform: scale(0.8); /* Adjust the overall size of the radio button */
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  width: 16px; /* Outer circle size */
-  height: 16px; /* Outer circle size */
-  border: 2px solid #007bff; /* Outer border color */
-  border-radius: 50%;
-  outline: none;
-  cursor: pointer;
-  position: relative;
-}
 
-input[type="radio"]:checked::before {
-  content: '';
-  display: block;
-  width: 9px; /* Inner dot size */
-  height: 9px; /* Inner dot size */
-  background-color: #007bff; /* Dot color */
-  border-radius: 50%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); /* Center the dot inside the circle */
-}
