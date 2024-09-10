@@ -209,7 +209,7 @@ a.ssolink {
   margin: 0 10px;
 }
 input[type="radio"] {
-  transform: scale(1); /* Adjust the scale to reduce the size */
+  transform: scale(0.6); /* Adjust the scale to reduce the size */
   -webkit-appearance: none; /* Remove the default styling */
   -moz-appearance: none;
   appearance: none;
@@ -224,8 +224,8 @@ input[type="radio"] {
 input[type="radio"]:checked::before {
   content: '';
   display: block;
-  width: 8px;
-  height: 8px;
+  width: 12px;  /* Adjust this value to change the size of the inner dot */
+  height: 12px; /* Adjust this value to change the size of the inner dot */
   background-color: #007bff; /* Checked state color */
   border-radius: 50%;
   margin: 2px;
