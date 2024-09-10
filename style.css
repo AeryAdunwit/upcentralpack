@@ -209,12 +209,12 @@ a.ssolink {
   margin: 0 10px;
 }
 input[type="radio"] {
-  transform: scale(0.6); /* Adjust the scale to reduce the size */
+  transform: scale(1); /* Adjust the scale to reduce the size */
   -webkit-appearance: none; /* Remove the default styling */
   -moz-appearance: none;
   appearance: none;
-  width: 14px;
-  height: 14px;
+  width: 12px;
+  height: 12px;
   border: 2px solid #007bff; /* Custom border color */
   border-radius: 50%;
   outline: none;
