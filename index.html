@@ -98,15 +98,34 @@
     </label>
     </div>
     </div>
+<div class="field padding-bottom--24">
+  <label for="DO">เลข Do</label>
+  <input 
+    type="number" 
+    id="DO" 
+    name="DO" 
+    placeholder="ใส่เลข Do" 
+    min="1" 
+    max="9999999999" 
+    oninput="this.value=this.value.slice(0,10)" 
+    onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+    required
+  >
+</div>
                 <div class="field padding-bottom--24">
-                  <label for="DO">เลข Do</label>
-                  <input type="text" id="DO" name="DO" placeholder="ใส่เลข Do" required>
-                </div>
-
-                <div class="field padding-bottom--24">
-                  <label for="label">เลข Label</label>
-                  <input type="text" id="Label" name="Label" placeholder="ใส่เลข Label" required>
-                </div>
+  <label for="label">เลข Label</label>
+  <input 
+    type="number" 
+    id="Label" 
+    name="Label" 
+    placeholder="ใส่เลข Label" 
+    min="1" 
+    max="9999999999" 
+    oninput="this.value=this.value.slice(0,10)" 
+    onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+    required
+  >
+</div>
 
                 <div class="field padding-bottom--24">
                   <label for="qty">จำนวนกล่อง</label>
